@@ -1,0 +1,350 @@
+:root {
+    --bg-main: #216fdb;
+    --bg-second: ;
+    --bg-input: rgb(241, 241, 241);
+    --black-txt: rgb(99, 99, 99);
+}
+
+* {
+    font-family: "Roboto-Regular", "Helvetica", "sans-serif";
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    text-align: center;
+}
+
+.box p {
+    display: none;
+}
+
+.fb-logo h1 {
+    margin: 40px;
+    font-size: 3rem;
+    color: var(--bg-main);
+    cursor: pointer;
+}
+
+.form-section {
+    text-align: center;
+}
+
+.input,
+.pass {
+    /* border: 01px solid red; */
+    margin: 5px;
+}
+
+.input input,
+.pass input {
+    padding: 20px;
+    padding-left: 6px;
+    height: 20px;
+    font-size: 17px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid rgb(202, 202, 202);
+    background-color: var(--bg-input);
+    margin-right: 20px;
+}
+
+.pass span {
+    padding: 10px;
+    text-align: center;
+    height: 20px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#show{
+    display: inline;
+}
+#hide{
+    display: none;
+}
+
+.btn {
+    margin: 10px;
+    height: 35px;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #1485ee;
+    color: white;
+    border: 1px solid #1485ee;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.fp {
+    color: var(--bg-main);
+    cursor: pointer;
+}
+
+.crt-btn {
+    margin: 0px;
+    width: 220px;
+    height: 35px;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #17ac09;
+    color: white;
+    border: 1px solid #1485ee;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.or {
+    margin-top: 30px;
+    position: relative;
+    pointer-events: none;
+}
+
+.or:before {
+    content: "";
+    width: 8rem;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    background-color: rgb(192, 192, 192);
+    align-items: center;
+}
+
+.or:after {
+    content: "";
+    width: 8rem;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    background-color: rgb(192, 192, 192);
+}
+
+.footer {
+    width: 70%;
+    margin: 70px;
+    padding: 10px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-language,
+.right-language {
+    border: 0px solid rebeccapurple;
+
+}
+
+.left-language a,
+.right-language a {
+    /* border: 2px solid rebeccapurple; */
+    margin: 2px;
+    display: block;
+    font-size: 12px;
+}
+
+.left-language a:first-child {
+    color: var(--black-txt);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.right-language a:last-child {
+    margin-top: 5px;
+    padding: 4px;
+    font-size: bold;
+    border: 2px solid var(--black-txt);
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fbinc {
+    color: var(--black-txt);
+}
+
+
+@media (max-width:900px) {
+    .nav {
+        padding-left: 20px;
+        background: linear-gradient(rgb(255, 249, 213)95%, rgba(104, 104, 104, 0.5));
+        text-align: left;
+        width: 100%;
+        color: var(--bg-main);
+        pointer-events: none;
+        cursor: pointer;
+    }
+
+    .input,
+    .pass {
+        width: 65vw;
+        /* border: 2px solid rebeccapurple; */
+    }
+
+    .input input,
+    .pass input {
+        width: 100%;
+    }
+
+    .pass input {
+        /* border: 2px solid red; */
+        width: 100%;
+        width: calc(65vw-10px);
+    }
+
+    .pass span {
+        top: 241px;
+        right: 20%;
+        background-color: var(--bg-input);
+        height: 36px;
+    }
+
+    .btn {
+        width: calc(100% - 40px);
+    }
+
+    .fb-min {
+        display: none;
+    }
+}
+
+@media (max-width:550px) {
+    .nav p {
+        font-size: 14px;
+    }
+
+    .input,
+    .pass {
+        width: 90vw;
+    }
+
+    .input input,
+    .pass input {
+        width: 100%;
+    }
+
+    .pass span {
+        top: 238px;
+        right: 6%;
+    }
+
+}
+
+@media (min-width:900px) {
+    body {
+        background-color: rgb(231, 231, 231);
+    }
+
+    .nav {
+        /* background-color: #1485ee; */
+        background-color: var(--bg-main);
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav p {
+        display: none;
+    }
+
+    .fb-min {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 80%;
+    }
+
+    .fb-logo {
+        margin-top: -20px;
+        visibility: hidden;
+    }
+
+    .fb-min h1 {
+        font-size: 2.5rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .box {
+        padding: 50px;
+        border-radius: 4px;
+        min-width: 600px;
+        max-width: 600px;
+        background-color: white;
+        text-align: center;
+    }
+
+    .box p {
+        margin: 30px;
+        margin-top: -20px;
+        display: block;
+        font-size: 20px;
+    }
+
+    .input {
+        width: 100%;
+    }
+    
+    .pass{width: 100%;
+        text-align: left;
+    }
+
+    .input input {
+        width: 100%;
+        background-color: white;
+        /* border: 2px solid rgb(7, 6, 7); */
+    }
+    .pass input{
+        width: 437px;
+        background-color: white;
+        /* border: 2px solid rgb(7, 6, 7); */
+        margin-left: 0px
+    }
+    .pass span {
+        margin-left: -23px;
+        padding: 12px;
+        background-color: var(--bg-input);
+        height: 40px;
+        display: inline;
+        width: 50px;
+        position: relative;
+    }
+
+    .btn {
+        margin-bottom: 5px;
+        width: 400px;
+    }
+
+    .form {
+        margin-bottom: 30px;
+    }
+
+    .footer {
+        margin-top: 100px;
+        border-bottom: 2px solid rgba(119, 119, 119, 0.658);
+        width: 100%;
+        padding-left: 20px;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .left-language a,
+    .right-language a {
+        margin: 5px;
+        display: inline;
+        font-size: 12px;
+    }
+
+}

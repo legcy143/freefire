@@ -1,0 +1,294 @@
+    
+    :root{
+        --bg-y: rgb(236, 143, 20); 
+    }
+    * {
+        font-family: 'popins', sans-serif;
+    }
+    
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.644)), url(img/bgff-mob.png);
+        background-position: center center;
+        display: flex;
+        flex-direction: column;
+    }
+    ::-webkit-scrollbar{
+        width: 0px;
+    }
+    .copyright{
+        color: white;
+        background-color: black;
+        position: fixed;
+        bottom: 0%;
+        width: 100vw;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
+    .copyright img{
+        border-radius: 6px;
+        width: 35px;
+        padding: 5px;
+    }
+    
+    .ttp {
+        text-align: center;
+        margin: 20px 50px;
+        padding: 20px;
+        pointer-events: none;
+    }
+    
+    .ffup {
+        margin: 0px;
+        padding: 0px;
+    }
+    /* css for logo <=== S T A R T ===>*/
+    
+    .divlogo {
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .logo {
+        margin: 4px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 35px;
+        height: fit-content;
+        border-radius: 50%;
+        border: 11px solid;
+        color: #fff;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    
+    .logo:hover {
+        background-color: rgb(206, 206, 206);
+        color: rgb(202, 202, 202);
+    }
+    
+    @media (max-width: 400px) {
+        .logo {
+            margin: 5px;
+            width: 29px;
+            border: 8px solid;
+        }
+        .note {
+            margin-right: 0px;
+            width: 300px;
+            overflow-y: scroll;
+        }
+    }
+    
+    @media (min-width:530px) {
+        .logo {
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 43px;
+        }
+        .note {
+            width: 350px;
+        }
+    }
+    /* css for logo <=== C L O S E ===> */
+    
+    .h2 {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 28px;
+        color: #fff;
+    }
+    
+    .pls {
+        font-size: 18px;
+        box-sizing: border-box;
+        text-align: center;
+        color: #fff;
+        text-size-adjust: 100%;
+    }
+    
+    .sp1 {
+        align-items: center;
+    }
+    
+    .note {
+        margin-bottom: 10px;
+        padding-bottom: 4px;
+        margin-top: 50px;
+        padding-top: 5px;
+        margin-left: auto;
+        padding-left: 0px;
+        margin-right: auto;
+        padding-right: 10px;
+        text-align: left;
+        font-size: 16px;
+        align-items: center;
+        background-color: rgba(235, 235, 235, 0.8);
+        color: black;
+        border: none;
+        border-radius: 12px;
+        box-sizing: border-box;
+        width: 320px;
+        height: 300px;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    @media (min-width:530px) {
+        .note {
+            width: 490px;
+            height: 230px;
+        }
+    }
+    
+    .h2i {
+        margin: 0px;
+        margin-left: -50px;
+        margin-bottom: -15px;
+        pointer-events: none;
+    }
+    
+    .list_item {
+        margin: 10px;
+        padding: 1px;
+        pointer-events: none;
+    }
+    
+    .highlight {
+        color: red;
+        cursor: pointer;
+    }
+    
+    .footer {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    @media (min-width: 900px) {
+        body {
+            background-image: url(img/bgff-pc.png);
+        }
+        .divlogo {
+            border: none;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: right;
+            padding-right: 20px;
+        }
+        .logo {
+            border: 12px solid white;
+        }
+        .h2i {
+            padding-left: 90px;
+        }
+        .note {
+            margin-top: 100px;
+            margin-right: 20px;
+            float: right;
+            width: 600px;
+            height: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: right;
+            border: none;
+            font-size: 18px;
+            background: transparent;
+            overflow: visible;
+        }
+        .home_right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            border: none;
+        }
+        .ttp {
+            margin-right: 200px;
+        }
+        .ffup {
+            margin: 0px;
+            margin-right: 170px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo:hover {
+            border: 12px solid rgb(226, 226, 226);
+            color: rgb(202, 202, 202);
+        }
+    }
+
+
+    .bg-alert{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.548);
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .alert{
+        padding: 20px;
+        color: var(--bg-y);
+        background-color: rgba(0, 0, 0, 0.534);
+        box-shadow: 0px 0px 10px black;
+        overflow: hidden;
+        display: flex;
+        gap: 50px;
+    }
+    .alert span:first-child{
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    .alert span:last-child{
+        font-size: 100px;
+    }
+    .alert button
+    {
+        margin-top: 20px;
+        text-align: center;
+        cursor: pointer;
+        width: 70px;
+        height: 28px;
+        background-color: var(--bg-y);
+        font-size: 15px;
+        text-transform: uppercase;
+        float: right;
+    }
+    .line{
+        margin: -20px;
+        background-color: var(--bg-y);
+        width: 12px;
+        height: 190px;
+    }
+
+    @media (max-height: 700px) {
+        .note {
+            margin-top: 20px;
+            height: 210px;
+         width: 90%;
+        }
+    }
